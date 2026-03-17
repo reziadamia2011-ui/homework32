@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts Library</title>
+    <style>
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); }
+        #loading { display: none; font-weight: bold; color: blue; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+<h1>პოსტების ბიბლიოთეკა</h1>
+
+<input type="number" id="postIdInput" placeholder="შეიყვანეთ პოსტის ID (1-100)">
+<button id="viewPostBtn">პოსტის ნახვა</button>
+<button id="viewAllBtn">ყველა პოსტი</button>
+
+<p id="loading">Loading...</p>
+
+<div id="postsContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
